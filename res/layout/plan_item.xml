@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pop_item"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_medium" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Sat 4/12" />
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_date"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:text="9:30 AM" />
+
+        <TextView
+            android:id="@+id/tv_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_segmentation"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/tv_segmentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_duration"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_min"
+            android:text="60" />
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="min" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl_time"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_small"
+        android:background="@color/gray"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_plan_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_line"
+        android:layout_marginLeft="@dimen/common_margin_large"
+        android:layout_marginRight="@dimen/common_margin_large" >
+
+        <RelativeLayout
+            android:id="@+id/rl_weather"
+            style="@style/plan_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/runplan_height" >
+
+            <ImageView
+                android:id="@+id/iv_weather_icon"
+                android:layout_width="@dimen/runplan_icon_height"
+                android:layout_height="@dimen/runplan_icon_height"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_weather" />
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_weather_icon"
+                android:layout_centerHorizontal="true"
+                android:text="25℃/32℃" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_time_smart"
+            style="@style/plan_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/runplan_height"
+            android:layout_toLeftOf="@+id/rl_other_time"
+            android:layout_toRightOf="@+id/rl_weather"
+            android:gravity="center"
+            android:text="Smart 20 min" />
+
+        <RelativeLayout
+            android:id="@+id/rl_other_time"
+            style="@style/plan_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/runplan_height"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tv_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Original 30 min" />
+
+            <TextView
+                android:id="@+id/tv_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_original"
+                android:layout_centerHorizontal="true"
+                android:text="Manual 10 min" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

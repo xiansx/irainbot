@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iRainbot</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 通用 -->
+    <string name="app_submit">Submit</string>
+    <string name="app_ok">OK</string>
+    <string name="app_cancel">Cancel</string>
+    <string name="app_operation_success">Operation Success</string>
+    <string name="app_no_content">No Content</string>
+    <string name="app_network_error">Network connection failed, please try again later.</string>
+    <string name="app_loading">Loading.</string>
+    <string name="app_submit_doing">Submit Now.</string>
+
+    <!-- 用户 -->
+    <string name="user_login_title">Welcome</string>
+    <string name="user_input_name">Name</string>
+    <string name="user_input_email">Email Address</string>
+    <string name="user_input_pwd">Password</string>
+    <string name="user_input_email_collect">Please input collect email</string>
+    <string name="user_input_pwd_notempty">Please input password</string>
+    <string name="user_input_pwd_old_notempty">Please input old password</string>
+    <string name="user_input_pwd_new_notempty">Please input new password</string>
+    <string name="user_input_name_notempty">Please input name</string>
+    <string name="user_input_pwd_confirm">Confirm password</string>
+    <string name="user_input_pwd_confirm_notempty">Please input confirm password</string>
+    <string name="user_input_pwd_confirm_wrong">Confirm password is wrong</string>
+    <string name="user_forget_pwd_title">Forgot Password</string>
+    <string name="user_forget_pwd">Forgot Password?</string>
+    <string name="user_login">Sign in</string>
+    <string name="user_login_success">Sign in success</string>
+    <string name="user_login_failure">Sign in failure</string>
+    <string name="user_reg">Sign up</string>
+    <string name="user_reg_failure">Sign up failure</string>
+    <string name="user_verifyemail_title">Verify Email</string>
+    <string name="user_verifyemail_lable_one">Your account has been created.</string>
+    <string name="user_verifyemail_lable_two">We have sent an email to verify your email address. </string>
+    <string name="user_verifyemail_lable_three">Please check your email to Set new Password.</string>
+    <string name="user_verifyemail_lable_four">Please check your email to complete your registration.</string>
+    <string name="user_change_pwd_title">Change Password</string>
+    <string name="user_input_oldpwd">Old Password</string>
+    <string name="user_input_newpwd">New Password</string>
+    <string name="user_reg_doing">Sign up doing</string>
+    <string name="user_edit_doing">Change password doing</string>
+    <string name="user_edit_success">Change password success</string>
+    <string name="user_login_doing">Sign in doing</string>
+
+    <!-- navigationvar -->
+    <string name="navigationvar_home">Home</string>
+    <string name="navigationvar_runnow">Run Now</string>
+    <string name="navigationvar_stats">Stats</string>
+    <string name="navigationvar_settings">Settings</string>
+
+    <!-- settings -->
+    <string name="settings_currentdevice">CURRENT DEVICE</string>
+    <string name="settings_configuredevice">Configure Device</string>
+    <string name="settings_configurezones">Configure Zones</string>
+    <string name="settings_sharedevice">Share Device</string>
+    <string name="settings_deletedevice">Delete Device</string>
+    <string name="settings_program">PROGRAM</string>
+    <string name="settings_program_info">Program Info</string>
+
+    <!-- device -->
+    <string name="device_choose_lable">Please choose the device you want to setup from the list below.</string>
+    <string name="device_available">AVAILABLE DEVICES</string>
+    <string name="device_choose_wifi_lable">Please choose the Wi-Fi network for the device to connect to the Internet.</string>
+    <string name="device_wifi_available">AVAILABLE WIFI NETWORKS</string>
+    <string name="device_wifi_set">PROVIDE INFORMATION</string>
+    <string name="device_wifi_input_pwd">Input Wi-Fi password</string>
+    <string name="device_input_name">Give the device a name</string>
+    <string name="device_input_zipcode">Zipcode</string>
+    <string name="device_sendtodevice">Send to Device</string>
+    <string name="device_share_lable">If you share this device, other users will be able to control the device</string>
+    <string name="device_share">Share</string>
+    <string name="device_share_role_lable">Share To Role</string>
+    <string name="device_share_success">Share Device Success</string>
+    <string name="device_share_failure">Share Device failure</string>
+    <string name="device_delete_title">Whether to delete device? this action is irreversible.</string>
+    <string name="device_delete_success">Delete Device Success</string>
+    <string name="device_configure_name">Device Name</string>
+    <string name="device_configure_zipcode">Zipcode</string>
+    <string name="device_configure_success">Configure Device Success</string>
+    <string name="device_add">Add Device</string>
+    <string name="device_pincode_title">Please Input PinCode</string>
+    <string name="device_pincode_input">PinCode</string>
+    <string name="device_wifi_choose">Choose Wi-Fi</string>
+    <string name="device_wifi_setuping_title">SETUPING</string>
+    <string name="device_wifi_setuping_msg">Please wait while MrGardener is setuping your device...</string>
+    <string name="device_wifi_setup_success">Setup Device`s Wifi Success</string>
+    <string name="device_switch">Switch Device</string>
+    <string name="device_switch_choose">Please choose the available device from the list below.</string>
+    <string name="device_input_name_notempty">Please input device‘s name</string>
+    <string name="device_input_zipcode_notempty">Please input device‘s zipcode</string>
+
+    <!-- Zone -->
+    <string name="zone_title">All Valves</string>
+    <string name="zone_master_lable">MASTER VALVE</string>
+    <string name="zone_master_switch">Master Valve</string>
+    <string name="zone_normalvalves_lable">NORMAL VALVES</string>
+    <string name="zone_value_status_lable">STATUS</string>
+    <string name="zone_value_status">Enabled</string>
+    <string name="zone_alias">ALIAS</string>
+    <string name="zone_input_name">Input Zone Name</string>
+    <string name="zone_input_vegetation">Select Zone Vegetation</string>
+    <string name="zone_input_sunshine">Select Zone Sunshine</string>
+    <string name="zone_input_slope">Select Zone Slope</string>
+    <string name="zone_input_soil">Select Zone Soil</string>
+    <string name="zone_value_alias_select">Select alias value</string>
+	<string name="zone_plan_detail_title">Runplan Zones Detail</string>    
+	<string name="zone_configure_success">Configure Zone Success</string>
+	
+    <!-- program -->
+    <string name="program_title">Programs</string>
+    <string name="program_create">Create a New Program</string>
+    <string name="program_watering_months_lable">WATERING MONTHS</string>
+    <string name="program_edit_name_lable">NAME</string>
+    <string name="program_edit_name_input">Input Program Name</string>
+    <string name="program_edit_months_lable">MONTHS</string>
+    <string name="program_edit_months_input">Input Program Months</string>
+    <string name="program_edit_frequency_lable">FREQUENCY</string>
+    <string name="program_edit_frequency_input">Select Program Frequency</string>
+    <string name="program_edit_weathersmart_switch">Weather Smart</string>
+    <string name="program_edit_weathersmart_lable">WEATHER SMART</string>
+    <string name="program_edit_starttime_lable">START TIME</string>
+    <string name="program_edit_starttime_input">Input Program Starttime</string>
+    <string name="program_edit_watering_zones_lable">WATERING ZONES</string>
+    <string name="program_edit_months_select">Select program months</string>
+    <string name="program_configure_success">Configure Program Success</string>
+    
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pagebg"
+    android:padding="0dp" >
+
+    <!-- 公用块的引用 -->
+
+    <include
+        android:id="@+id/include_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_actionbar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginRight="@dimen/common_margin_normal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_medium"
+                android:text="@string/zone_value_status_lable" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/setting_item_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/zone_value_status" />
+
+                <TextView
+                    android:id="@+id/tv_switch"
+                    style="@style/setting_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switch_on" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:text="@string/zone_alias" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginRight="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:hint="@string/zone_input_name"
+                android:inputType="textCapCharacters"
+                android:maxLength="30" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_vegetation"
+                style="@style/droplist_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginRight="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:hint="@string/zone_input_vegetation" />
+
+            <TextView
+                android:id="@+id/tv_sunshine"
+                style="@style/droplist_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginRight="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:hint="@string/zone_input_sunshine" />
+
+            <TextView
+                android:id="@+id/tv_slope"
+                style="@style/droplist_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginRight="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:hint="@string/zone_input_slope" />
+
+            <TextView
+                android:id="@+id/tv_soil"
+                style="@style/droplist_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="@dimen/common_margin_normal"
+                android:layout_marginRight="@dimen/common_margin_normal"
+                android:layout_marginTop="@dimen/common_margin_normal"
+                android:hint="@string/zone_input_soil" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

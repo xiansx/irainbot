@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btnbgwhite_pressed" android:state_focused="true" android:state_pressed="false"/>
+ <!-- 未点击 的时候ImageView的背景图 -->
+
+    <item android:drawable="@drawable/btnbgwhite_pressed" android:state_focused="true" android:state_pressed="true"/>
+ <!-- 点击 的时候ImageView的背景图 -->
+
+    <item android:drawable="@drawable/btnbgwhite_pressed" android:state_focused="false" android:state_pressed="true"/>
+ <!-- 点击 的时候ImageView的背景图 -->
+
+    <item android:drawable="@drawable/btnbgwhite_normal"/>
+ <!-- 未点击 的时候ImageView的背景图 -->
+
+</selector>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/tv_device_wifi_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_medium"
+        android:text="@string/device_wifi_set"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_device_wifi_set"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_wifi_pwd"
+        style="@style/edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_below="@+id/ll_line"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_normal"
+        android:hint="@string/device_wifi_input_pwd"
+        android:inputType="textCapCharacters"
+        android:maxLength="30" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_device_name"
+        style="@style/edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_below="@+id/et_wifi_pwd"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_medium"
+        android:hint="@string/device_input_name"
+        android:inputType="textCapCharacters"
+        android:maxLength="30" />
+
+    <EditText
+        android:id="@+id/et_device_zipcode"
+        style="@style/edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_below="@+id/et_device_name"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_medium"
+        android:hint="@string/device_input_zipcode"
+        android:inputType="number"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/tv_sendto_device"
+        style="@style/btn_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_below="@+id/et_device_zipcode"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_medium"
+        android:text="@string/device_sendtodevice"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp" >
+
+    <EditText
+        android:id="@+id/et_pincode"
+        style="@style/edittext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_normal"
+        android:hint="@string/device_pincode_input"
+        android:inputType="textCapCharacters"
+        android:maxLength="30" >
+    </EditText>
+
+</RelativeLayout>

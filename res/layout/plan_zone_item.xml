@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pagebg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:background="@drawable/btnbgwhite_normal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_padding_normal"
+        android:paddingRight="@dimen/common_padding_normal" >
+
+        <TextView
+            android:id="@+id/tv_zone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="1.Front Yard" />
+
+        <TextView
+            android:id="@+id/tv_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_segmentation"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/tv_segmentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_duration"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_min"
+            android:text="60" />
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="min" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_zone_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_normal"
+        android:max="360"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:progress="200"
+        android:progressDrawable="@drawable/seekbar_style_color"
+        android:secondaryProgress="100"
+        android:thumb="@drawable/seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/tv_zone_alias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_normal"
+        android:gravity="right"
+        android:text="Lawn, Partial Shade, Mild" />
+
+    <LinearLayout
+        android:id="@+id/ll_zonetime_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_normal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_time_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Smart 20 min" />
+
+        <TextView
+            android:id="@+id/tv_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Original 30 min" />
+
+        <TextView
+            android:id="@+id/tv_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Manual 10 min" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:layout_marginTop="@dimen/common_margin_medium"
+        android:background="@color/line_color"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

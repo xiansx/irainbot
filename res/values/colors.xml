@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="dkgray">#FF444444</color>
+    <color name="gray">#FF888888</color>
+    <color name="ltgray">#FFCCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magenta">#FFFF00FF</color>
+    <color name="transparent">#00000000</color>
+     
+    <!-- actionbar颜色 -->
+    <color name="actionbar_bg">#222222</color>
+    
+    <!-- 背景颜色 -->
+    <color name="pagebg">#dcdcdc</color>
+    
+    <!-- 忘记密码颜色 -->
+	<color name="user_forget_color">#0066cc</color>
+	
+    <!-- 标注、小标题颜色 -->
+	<color name="lable_color">#686767</color>	
+	
+    <!-- 标注、小标题颜色 -->
+	<color name="gridview_bg_color">#272727</color>	
+	
+	<!-- list item颜色 -->
+	<color name="list_bg_color">#f3f3f3</color>
+	<color name="list_item_lable_color">#5396e0</color>
+	
+	<!-- line 颜色 -->
+	<color name="line_color">#adadad</color>
+</resources>

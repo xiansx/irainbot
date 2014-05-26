@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pagebg"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_margin_normal"
+        android:layout_marginRight="@dimen/common_margin_normal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:text="@string/settings_currentdevice" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_configure_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/bg_pop_item"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_configure_device_lable"
+                style="@style/setting_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_configuredevice" />
+
+            <TextView
+                android:id="@+id/tv_configure_device"
+                style="@style/setting_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_configure_device_lable"
+                android:drawableRight="@drawable/setting_item_show" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginRight="@dimen/common_margin_normal"
+            android:background="@color/line_color"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_configure_zones"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/bg_pop_item"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_configure_zones_lable"
+                style="@style/setting_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_configurezones" />
+
+            <TextView
+                android:id="@+id/tv_configure_zones"
+                style="@style/setting_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_configure_zones_lable"
+                android:drawableRight="@drawable/setting_item_show" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginRight="@dimen/common_margin_normal"
+            android:background="@color/line_color"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_share_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/bg_pop_item"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_share_device_lable"
+                style="@style/setting_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_sharedevice" />
+
+            <TextView
+                android:id="@+id/tv_share_device"
+                style="@style/setting_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_share_device_lable"
+                android:drawableRight="@drawable/setting_item_show" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginRight="@dimen/common_margin_normal"
+            android:background="@color/line_color"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_delete_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/bg_pop_item"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_delete_device_lable"
+                style="@style/setting_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_deletedevice" />
+
+            <TextView
+                android:id="@+id/tv_delete_device"
+                style="@style/setting_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_delete_device_lable"
+                android:drawableRight="@drawable/setting_item_show"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- program -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_normal"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:text="@string/settings_program" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_program_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/bg_pop_item"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_program_info_lable"
+                style="@style/setting_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_program_info" />
+
+            <TextView
+                android:id="@+id/tv_program_info"
+                style="@style/setting_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_program_info_lable"
+                android:drawableRight="@drawable/setting_item_show" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

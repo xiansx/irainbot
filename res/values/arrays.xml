@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_menu">
+        <item >Change Password</item>
+        <item >Add Device</item>
+        <item >Switch Device</item>
+        <item >Logout</item>
+    </string-array>
+</resources>
